@@ -1,0 +1,140 @@
+{
+	"Common": {
+		"LogFiles": 21
+	},
+
+	"MQTT": {
+		"Host": "10.3.172.100",
+		"Port": 1883,
+		"User": "XXXXX",
+		"Password": "YYYYY",
+		"KeepAlive": 30
+	},
+
+	"Services": [
+		{
+		"Service": "--Telegram",
+		"ServiceID": "*",
+		"SrcTopic":     "Raduga/Export/Telegram/Events/#",
+		"DstTopicBase": "Raduga/Monitor/Users/TEST-Telegram/Devices/Event",
+		"SrcCodePage": "UTF-8",
+		"DstCodePage": "UTF-8",
+		"SmartEventInfo": true,
+
+		"PassAll": true,
+		"DefaultAddTopic": ""
+		},
+
+
+		{
+		"Service": "TEST",
+		"ServiceID": "UVO-SM",
+
+		"_SrcTopic":     "Raduga/Export/Telegram/Events/#",
+		"_SrcTopic":     "Raduga/Export/UVO-SM/Events/#",
+		"SrcTopic":     "Raduga/Export/TEST/Events/#",
+
+		"_DstTopicBase": "Raduga/Monitor/Users/UVO-SM/Devices",
+		"DstTopicBase": "Raduga/Monitor/Users/TEST/Devices",
+
+		"SrcCodePage": "UTF-8",
+		"DstCodePage": "UTF-8",
+		"_DstCodePage": "Windows-1251",
+		"SmartEventInfo": false,
+
+		"CodeTranslations": [
+			{"CodeFrom": 5320, "CodeTo": 5320, "TypeTo": "Alarm"},
+			{"CodeFrom": 5321, "CodeTo": 5321, "TypeTo": "Alarm"},
+			{"CodeFrom": 5322, "CodeTo": 5322, "TypeTo": "Alarm"},
+			{"CodeFrom": 5323, "CodeTo": 5323, "TypeTo": "Alarm"},
+			{"CodeFrom": 99120, "CodeTo": 120, "TypeTo": "Alarm"},
+			{"CodeFrom": 99130, "CodeTo": 130, "TypeTo": "Alarm"},
+			{"CodeFrom": 99150, "CodeTo": 150, "TypeTo": "Alarm"},
+			{"CodeFrom": 99,  "CodeTo": 0, "TypeTo": "Alarm"},
+			{"CodeFrom": 99,  "CodeTo": 120, "TypeTo": "Alarm", "AddTopic": "Test"}
+		],
+		"_DefaultTranslation": {"CodeTo": 177, "TypeTo": "TestType", "AddTopic": "Test"},
+		"_DefaultTranslation": {"CodeTo": 155},
+		"_DefaultTranslation": {"CodeTo": 0, "TypeTo": ""},
+		"_PassAll": true,
+		"_DefaultAddTopic": ""
+		},
+
+
+		{
+		"Service": "--UVO+Telegram",
+		"ServiceID": "UVO",
+		"SrcTopic":     "Raduga/Export/Telegram/Events/#",
+		"DstTopicBase": "Raduga/Monitor/Users/UVO/Devices",
+		"SrcCodePage": "UTF-8",
+		"DstCodePage": "UTF-8",
+		"SmartEventInfo": false,
+
+		"CodeTranslations": [
+			{"CodeFrom": 5320, "CodeTo": 5320, "TypeTo": "Alarm"},
+			{"CodeFrom": 5321, "CodeTo": 5321, "TypeTo": "Alarm"},
+			{"CodeFrom": 5322, "CodeTo": 5322, "TypeTo": "Alarm"},
+			{"CodeFrom": 5323, "CodeTo": 5323, "TypeTo": "Alarm"}
+		],
+		"PassAll": false
+		},
+
+
+		{
+		"Service": "--UVO-SM+Telegram",
+		"ServiceID": "UVO-SM",
+		"SrcTopic":     "Raduga/Export/Telegram/Events/#",
+		"DstTopicBase": "Raduga/Monitor/Users/UVO-SM/Devices",
+		"SrcCodePage": "UTF-8",
+		"DstCodePage": "UTF-8",
+		"SmartEventInfo": false,
+
+		"CodeTranslations": [
+			{"CodeFrom": 5320, "CodeTo": 5320, "TypeTo": "Alarm"},
+			{"CodeFrom": 5321, "CodeTo": 5321, "TypeTo": "Alarm"},
+			{"CodeFrom": 5322, "CodeTo": 5322, "TypeTo": "Alarm"},
+			{"CodeFrom": 5323, "CodeTo": 5323, "TypeTo": "Alarm"}
+		],
+		"PassAll": false
+		},
+
+
+		{
+		"Service": "--UVO",
+		"ServiceID": "*",
+		"SrcTopic":     "Raduga/Export/UVO/Events/#",
+		"DstTopicBase": "Raduga/Monitor/Users/UVO/Devices",
+		"SrcCodePage": "UTF-8",
+		"DstCodePage": "UTF-8",
+		"SmartEventInfo": false,
+
+		"CodeTranslations": [
+			{"CodeFrom": 5320, "CodeTo": 5320, "TypeTo": "Alarm"},
+			{"CodeFrom": 5321, "CodeTo": 5321, "TypeTo": "Alarm"},
+			{"CodeFrom": 5322, "CodeTo": 5322, "TypeTo": "Alarm"},
+			{"CodeFrom": 5323, "CodeTo": 5323, "TypeTo": "Alarm"}
+		],
+		"PassAll": false
+		},
+
+
+		{
+		"Service": "--UVO-SM",
+		"ServiceID": "*",
+		"SrcTopic":     "Raduga/Export/UVO-SM/Events/#",
+		"DstTopicBase": "Raduga/Monitor/Users/UVO-SM/Devices",
+		"SrcCodePage": "UTF-8",
+		"DstCodePage": "UTF-8",
+		"SmartEventInfo": false,
+
+		"CodeTranslations": [
+			{"CodeFrom": 5320, "CodeTo": 5320, "TypeTo": "Alarm"},
+			{"CodeFrom": 5321, "CodeTo": 5321, "TypeTo": "Alarm"},
+			{"CodeFrom": 5322, "CodeTo": 5322, "TypeTo": "Alarm"},
+			{"CodeFrom": 5323, "CodeTo": 5323, "TypeTo": "Alarm"}
+		],
+		"PassAll": false
+		}
+	]
+}
+

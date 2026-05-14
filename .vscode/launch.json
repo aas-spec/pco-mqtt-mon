@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PCO MQTT Monitor",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}",
+      "args": [
+        "-debug",
+        "-config", "${workspaceFolder}/bin/PCO-MQTT-Mon.cfg"
+      ],
+      "showLog": true
+    },
+    {
+      "name": "Test current package",
+      "type": "go",
+      "request": "launch",
+      "mode": "test",
+      "program": "${fileDirname}",
+      "args": ["-v", "-count=1"],
+      "showLog": true
+    }
+  ]
+}

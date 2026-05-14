@@ -1,0 +1,32 @@
+{
+  "go.gopath": "/home/aas/go",
+  "go.goroot": "/usr/lib/go-1.26",
+
+  "go.toolsManagement.autoUpdate": false,
+
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "golang.go"
+  },
+
+  "go.lintTool": "staticcheck",
+  "go.lintFlags": ["-checks=all"],
+  "go.lintOnSave": "package",
+
+  "go.vetOnSave": "package",
+
+  "go.testFlags": ["-v", "-race"],
+  "go.testTimeout": "30s",
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true,
+
+  "gopls": {
+    "ui.semanticTokens": true,
+    "ui.completion.usePlaceholders": true,
+    "ui.diagnostic.staticcheck": true,
+    "build.buildFlags": []
+  }
+}

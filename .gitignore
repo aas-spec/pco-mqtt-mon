@@ -1,0 +1,35 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.zip
+
+# Build output
+bin/raduga_mqtt_mon.exe
+bin/*.exe
+bin/*.zip
+
+# Logs
+bin/logs/
+
+# Config (contains credentials)
+bin/PCO-MQTT-Mon.cfg
+bin/PCO-MQTT-Mon_old.cfg
+
+# Test artifacts
+*.test
+*.out
+coverage.html
+
+# IDE
+.idea/
+.vscode/*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+.aider*
+.claude
+

@@ -1,0 +1,10 @@
+2026-05-15 02:31:52 PCO MQTT Monitor Started
+2026-05-15 02:31:52 Service "Telegram" not Started due to Disabling in Config
+2026-05-15 02:31:52 Service "TEST" Started
+2026-05-15 02:31:52 Service "UVO+Telegram" not Started due to Disabling in Config
+2026-05-15 02:31:52 Service "UVO-SM+Telegram" not Started due to Disabling in Config
+2026-05-15 02:31:52 Service "UVO" not Started due to Disabling in Config
+2026-05-15 02:31:52 Service "UVO-SM" not Started due to Disabling in Config
+2026-05-15 02:31:52 Connecting to MQTT Server 10.3.172.100:1883 
+2026-05-15 02:31:52 MQTT Connected
+2026-05-15 02:31:52 Subscribed to Topic: Raduga/Export/TEST/Events/#

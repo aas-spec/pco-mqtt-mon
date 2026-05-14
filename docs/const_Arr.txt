@@ -1,0 +1,43 @@
+
+enum TAlarmType  // Коды АРМ УВО
+    {  //type_alarm
+        atUnknown = 0,
+        atAtack = 2,
+        atFire = 4,
+        atDuress = 5,
+        atHackCode = 7,
+        atCancel = 8,
+        atAlarm = 9
+    };
+
+
+int ArrAtack[]    = {amAtack, amSiliencePanic, amAudiblePanic, amAtackActGroup};   //atAtack
+int ArrFire[]     = {amFire, amSmoke, amCombustion, amFireButton, amFlame, amNearAlarm};  //atFire
+int ArrDuress[]   = {amDuressAG, amDuressEG};  //atDuress
+int ArrHackCode[] = {amHackCode};  //atHackCode
+
+
+если в массивы код не попадает atAlarm
+
+Коды amXXXX можно посмотреть в каталоге ...MQTT-Mon_Dev\const.h
+
+  amFire            = 110,  //"Пожарная тревога"
+  amSmoke           = 111,  //
+  amCombustion      = 112,  //"Возгорание"
+  amWaterFlow       = 113,
+  amHeat            = 114,
+  amFireButton      = 115,
+  amAlarmDuct       = 116,
+  amFlame           = 117,
+  amNearAlarm       = 118,  //"Внимание" опасность пожара
+
+  amAtack           = 120,  //"Нападение"
+  amDuress          = 121,  //"Принуждение"
+  amSiliencePanic   = 122,  //"Тихий экстренный вызов"
+  amAudiblePanic    = 123,  //"Громкий экстренный вызов"
+  amDuressAG        = 124,  //"Принуждение"
+  amDuressEG        = 125,  //"Принуждение"
+  amAtackActGroup   = 126,  //"Нападение на ГР"
+
+  amHackCode        = 498,  //"Подбор кода"
+

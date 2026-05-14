@@ -1,0 +1,22 @@
+
+{
+"ServiceID": "Test",
+"EventID": "%EVENT_CODE%",
+"EventTime": "%EVENT_DATE_TIME_ISO%",
+"EventCategory": "%EVENT_CATEGORY%",
+"PultNumber": "%PULTNUM%",
+"DeviceID": "%DEVICE_ID%",
+"DeviceInfo": "%DEVICE_INFO%",
+"ObjectName": "%OBJ_NAME%",
+"ObjectAddr": "%OBJ_ADDR%",
+"EventType": "%EVENT_TYPE_FLAGS%",
+"EventFlags": "%EVENT_FLAGS%",
+"EventCode": "%EVENT_TYPE_CODE%",
+"EventText": "%EVENT%",
+"EventNum": "%EVENT_NUM%",
+"ZoneUser": "%EVENT_NUM%",
+"ZoneInfo": "%ZONE_DESCR%",
+"UserName": "%FIO%",
+"EventInfo": "%EVENT_INFO%",
+"JournalID": "%JOURNAL_CODE%"
+}
